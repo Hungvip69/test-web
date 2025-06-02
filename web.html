@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Eye - Supporting the Visually Impaired</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #6e8efb 0%, #4a6cf7 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .mode-icon {
+            transition: all 0.3s ease;
+        }
+        .mode-card:hover .mode-icon {
+            transform: scale(1.1);
+        }
+        .hardware-img {
+            filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.04)) drop-shadow(0 4px 3px rgba(0, 0, 0, 0.1));
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <i class="fas fa-eye text-3xl text-blue-600 mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">Artificial Eye</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-800 hover:text-blue-600">About</a>
+                    <a href="#features" class="text-gray-800 hover:text-blue-600">Features</a>
+                    <a href="#modes" class="text-gray-800 hover:text-blue-600">Modes</a>
+                    <a href="#hardware" class="text-gray-800 hover:text-blue-600">Hardware</a>
+                    <a href="#contact" class="text-gray-800 hover:text-blue-600">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-2xl text-gray-800"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">Artificial Eye</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">Revolutionizing Independence for the Visually Impaired</h2>
+                <p class="text-lg mb-8">A comprehensive assistive technology combining advanced software with 3D-printed hardware to empower blind individuals with unprecedented independence.</p>
+                <div class="flex space-x-4">
+                    <a href="#features" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Explore Features</a>
+                    <a href="#contact" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition duration-300">Learn More</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1541418950054-c12804e149d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Artificial Eye Device" class="rounded-lg shadow-2xl w-full max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About the Project</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Blind person using technology" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Empowering the Visually Impaired Through Innovation</h3>
+                    <p class="text-gray-600 mb-6">The Artificial Eye project was born from a desire to create a comprehensive solution that addresses multiple challenges faced by blind individuals in their daily lives. Unlike single-function assistive devices, our system integrates seven essential modes into one intuitive platform.</p>
+                    <p class="text-gray-600 mb-6">By combining advanced software capabilities with custom 3D-printed hardware, we've created a device that's both highly functional and affordable. Our goal is to bridge the accessibility gap and provide blind individuals with greater independence.</p>
+                    <div class="flex items-center">
+                        <i class="fas fa-lightbulb text-3xl text-yellow-500 mr-4"></i>
+                        <p class="text-gray-600 font-semibold">Winner of the 2023 National Science Fair Innovation Award</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Key Features</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md feature-card transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">AI-Powered Assistance</h3>
+                    <p class="text-gray-600">Advanced machine learning algorithms provide accurate object recognition, text-to-speech conversion, and intelligent responses to user queries.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md feature-card transition duration-300">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">7 Integrated Modes</h3>
+                    <p class="text-gray-600">Comprehensive functionality including movement assistance, reading, chatbot interaction, time telling, weather updates, rest mode, and distance measurement.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md feature-card transition duration-300">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-print text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">3D-Printed Hardware</h3>
+                    <p class="text-gray-600">Custom-designed, lightweight housing that's affordable to produce and can be easily customized for individual user needs.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md feature-card transition duration-300">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md feature-card transition duration-300">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-microphone-alt text-3xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Voice Control</h3>
+                    <p class="text-gray-600">Natural language processing allows for intuitive voice commands and conversational interaction with the device.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md feature-card transition duration-300">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-mobile-alt text-3xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Smartphone Integration</h3>
+                    <p class="text-gray-600">Companion app allows caregivers to monitor usage, adjust settings, and receive alerts when assistance might be needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modes Section -->
+    <section id="modes" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Seven Essential Modes</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Mode 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl mode-card transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-walking text-xl text-blue-600 mode-icon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Movement Assistance</h3>
+                    </div>
+                    <p class="text-gray-600">The device uses a camera and AI to find obstacles (like people or objects) and tells the user how far they are by using an ultrasonic sensor connected to an Arduino board. The AI also says if it’s a person or just an object. This helps blind people walk safely and avoid things in their way.</p>
+                </div>
+                
+                <!-- Mode 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl mode-card transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-book-reader text-xl text-green-600 mode-icon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Reading Mode</h3>
+                    </div>
+                    <p class="text-gray-600">The camera takes a picture of text. The device uses AI to read the text and lets the user choose to hear a summary or the full content. It then reads it out loud. This helps users get information quickly and easily.</p>
+                </div>
+                
+                <!-- Mode 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl mode-card transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-comments text-xl text-purple-600 mode-icon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Chat Assistant</h3>
+                    </div>
+                    <p class="text-gray-600">Listens to the user, sends the question to ChatGPT, and reads out the answer.</p>
+                </div>
+                
+                <!-- Mode 4 -->
+                <div class="bg-gray-50 p-6 rounded-xl mode-card transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-clock text-xl text-red-600 mode-icon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Time Mode</h3>
+                    </div>
+                    <p class="text-gray-600">Says the current time and reminds about special events.</p>
+                </div>
+                
+                <!-- Mode 5 -->
+                <div class="bg-gray-50 p-6 rounded-xl mode-card transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-cloud-sun text-xl text-yellow-600 mode-icon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Weather Updates</h3>
+                    </div>
+                    <p class="text-gray-600">Tells the current weather and gives advice about going outside.</p>
+                </div>
+                
+                <!-- Mode 6 -->
+                <div class="bg-gray-50 p-6 rounded-xl mode-card transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-bed text-xl text-indigo-600 mode-icon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Rest Mode</h3>
+                    </div>
+                    <p class="text-gray-600">The device uses AI and a camera to recognize faces. It tells the user if people nearby are family members or strangers, so the user feels safer while resting.</p>
+                </div>
+                
+                <!-- Mode 7 -->
+                <div class="bg-gray-50 p-6 rounded-xl mode-card transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-ruler-combined text-xl text-pink-600 mode-icon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Distance Measurement</h3>
+                    </div>
+                    <p class="text-gray-600">Uses the Arduino and ultrasonic sensor to measure and tell the user how far away obstacles are.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardware Section -->
+    <section id="hardware" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">3D-Printed Hardware</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1581093458171-4a1d4e53510a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="3D printed hardware" class="rounded-lg hardware-img w-full max-w-md mx-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Custom-Designed for Distance Mode</h3>
+                    <p class="text-gray-600 mb-6">Our 3D-printed housing was specifically engineered to optimize the distance measurement capabilities of the Artificial Eye system. The lightweight yet durable design incorporates:</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-600">Precision mounting for ultrasonic sensors</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-600">Ergonomic shape for comfortable wear</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-600">Modular design for easy upgrades</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-600">Vibration motors for haptic feedback</span>
+                        </li>
+                    </ul>
+                    <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-600">
+                        <p class="text-blue-800"><i class="fas fa-lightbulb text-blue-600 mr-2"></i> The housing can be 3D printed in about 8 hours using standard PLA filament, keeping production costs under $5 per unit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">User Experiences</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah Johnson</h4>
+                            <p class="text-gray-600 text-sm">Visually impaired since birth</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The reading mode has completely changed how I interact with printed materials. I can now read my mail independently for the first time in my life."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Michael Chen</h4>
+                            <p class="text-gray-600 text-sm">Ophthalmologist</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"As a doctor, I'm impressed by how comprehensive this solution is. The distance measurement feature with the custom hardware is particularly innovative."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Emma Rodriguez</h4>
+                            <p class="text-gray-600 text-sm">Special education teacher</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"My students have gained so much confidence using the Artificial Eye. The multiple modes mean we don't need several different devices anymore."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-blue-600 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get Involved</h2>
+                <div class="w-20 h-1 bg-white mx-auto"></div>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Contact Us</h3>
+                        <p class="mb-6">Interested in learning more about the Artificial Eye project? Want to participate in our beta testing program? Reach out to us!</p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope mt-1 mr-4"></i>
+                                <span>contact@artificialeye.org</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt mt-1 mr-4"></i>
+                                <span>(555) 123-4567</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt mt-1 mr-4"></i>
+                                <span>123 Innovation Drive, Tech City, TC 98765</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block mb-1">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 rounded-lg bg-blue-500 border border-blue-400 placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent" placeholder="Your name">
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 rounded-lg bg-blue-500 border border-blue-400 placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent" placeholder="Your email">
+                            </div>
+                            <div>
+                                <label for="message" class="block mb-1">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 rounded-lg bg-blue-500 border border-blue-400 placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent" placeholder="Your message"></textarea>
+                            </div>
+                            <button type="submit" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-eye text-3xl text-blue-400 mr-2"></i>
+                        <span class="text-xl font-bold">Artificial Eye</span>
+                    </div>
+                    <p class="text-gray-400">Empowering the visually impaired through innovative technology.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white">Features</a></li>
+                        <li><a href="#modes" class="text-gray-400 hover:text-white">Modes</a></li>
+                        <li><a href="#hardware" class="text-gray-400 hover:text-white">Hardware</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Research Papers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">3D Printing Files</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">GitHub Repository</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to get updates on our project.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-400 w-full">
+                        <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Artificial Eye Project. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for demonstration
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle would go here
+    </script>
+</body>
+</html>
